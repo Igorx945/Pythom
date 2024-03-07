@@ -1,10 +1,11 @@
-secreta = "desculpa" 
-letraAcert = ["_","_","_","_","_","_","_","_"]
-tentativa = 7 
-def jogarForca():
-     
+import jogos
+
+def jogar():
+    secreta = "gustavos" 
+    letraAcert = ["_","_","_","_","_","_","_","_"]
+    tentativa = 7 
     while tentativa > 0 and  "_" in letraAcert:
-        palpite = input('digite uma letra').lower()
+        palpite = input('digite uma letra: ').lower()
         
         if palpite in secreta:
             index = 0
@@ -20,5 +21,7 @@ def jogarForca():
         print('parabens')
     else:
             print(f'voce perdeu, a palavra era {secreta}')
+    jogos.escolJogo()
+    
 if(__name__=="__main__"):
-     jogarForca()
+    jogar()

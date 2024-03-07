@@ -1,15 +1,19 @@
 import forca
 import adivinhacao
 
-def escolaJogo():
-    print("escolha o jogo")
-    print("1- forca")
-    print("2- adivinhacao")
-    escolha = int(input("digite a opcao"))
+def escolJogo():
+    print('-------------------------------------------')
+    print('-------------Escolha o jogo----------------')
+    print('-------------------------------------------')
+    print('(1) - Forca')
+    print('(2) - Adivinhação')
+    escolha = int(input('Digite a opção desejada: '))
     if escolha == 1:
-        forca.jogarForca()
+        forca.jogar()
     elif escolha == 2:
-        adivinhacao.jogarAdvinha()
+        adivinhacao.jogar()
     else:
-        print("digite 1 ou 2 baiano")
-escolaJogo()
+        print('Digite uma opção certa macaco')
+
+if(__name__=="__main__"):
+    escolJogo()
