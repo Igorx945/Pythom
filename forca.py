@@ -1,7 +1,7 @@
 import jogos
 
 def jogar():
-    secreta = "gustavos" 
+    secreta = "desculpa" 
     letraAcert = ["_","_","_","_","_","_","_","_"]
     tentativa = 7 
     while tentativa > 0 and  "_" in letraAcert:

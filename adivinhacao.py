@@ -1,6 +1,5 @@
 import random
 import jogos
-
 def jogar():
     nivel = int(input("escolha o nivel de dificuldade (1 - facil, 2- medio, 3 Dificil): "))
     max_numero = 10 if nivel == 1 else 50 if nivel == 2 else 100
